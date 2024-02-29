@@ -1,0 +1,236 @@
+body{
+	background-color: #0e1e32;
+}
+header{
+	height: 200px;
+	background-color: #1e3d59;
+	padding: 10px 20px ;
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+	z-index: 1000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.rect{
+	width: 100%;
+	height: 100%;
+	background-color: #f5f0e1;
+	border: 1px solid white;
+	box-sizing: border-box;
+	margin: 3px;
+	display: flex;
+	padding: 10px 5px;
+}
+
+
+.rect.background-image{
+	background-image: url(https://assets.stickpng.com/images/5904f37ebbee4f0964d87903.png);
+	background-size: 200px;
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+
+.rectsmall{
+    flex: 1;
+    height: 80px;
+    background-color: white;
+    border: 1px solid white;
+    margin: 5px;
+ }
+
+
+.rectsmall.background-image{
+	background-image: url(https://www.activision.com/content/dam/atvi/activision/atvi-touchui/activision/games/game-details/call-of-duty/mobile/codm-hero.jpg);
+	background-size: cover;
+	transition: width 0.3s ease-in-out;
+}
+
+.rectsmall.background-image1{
+	background-image: url(https://i.pinimg.com/originals/c4/88/a5/c488a5045bf7ac2d08b8bd9342cecf92.jpg);
+	background-size: cover;
+	transition: width 0.3s ease-in-out;
+}
+
+.rectsmall.background-image2{
+	background-image: url(https://w0.peakpx.com/wallpaper/291/864/HD-wallpaper-call-of-duty-mobile-halloween-thumbnail.jpg);
+	background-size: cover;
+	transition: width 0.3s ease-in-out;
+}
+
+.rectsmall:hover .sub-menu{
+	display: block;
+}
+.rectsmall:hover{
+	background-image: url(https://bnetproduct-a.akamaihd.net//1/e4d4b3bcd38c769cd7535810e2c95438-Jupiter_Coming_Soon-Bnet_Game-Content_UI_Phoenix-EN-1920x1080_textless.jpg);
+	background-size: cover;
+}
+
+ul{
+	display: none;
+	position: absolute;
+	background-color: #f5f0e1;
+	color: #1e3d59;
+	font-family: arial;
+	position: relative;
+	border: 8px solid #ffc13b;
+}
+
+li{
+	display: block;
+}
+
+
+h1{
+	text-align: center;
+	display: block;
+	height: 50%;
+	color: #f5f0e1;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+	transition: color 0.3s;
+
+}
+
+.rectsmall:hover h1{
+	color: #ff6e40;
+}
+
+
+.container{
+	height: 300px;
+	background-color: #1e3d59;
+	padding-top: 70px;
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	border: 10px solid #ff6e40;
+	border-radius: 20px;
+	background-image: url(https://images.ctfassets.net/rporu91m20dc/2f8VECLKB8AggCBXkNpeby/336a5159dd2d5ac07bae02ff3f8d5ccd/Skyrim10-home-hero-carousel.jpg);
+	background-size: cover;
+	margin-top: 260px;
+}
+
+.search{
+	height: 60px;
+	width: 60%;
+	background-color: #f5f0e1;
+	box-sizing: border-box;
+	border: 10px solid #ff6e40;
+	border-radius: 20px;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+.container2{
+	background-color: #f5f0e1;
+	display: flex;
+	flex-direction:row;
+}
+
+.column{
+    width: 20%;
+}
+.column.center{
+	width: 30%;
+	background-color: #f5f0e1;
+}
+.column.exct{
+	background-color:#0e1e32 ;
+	writing-mode: vertical-rl;
+	text-orientation: upright ;
+	display: flex;
+	align-items: center;
+}
+
+.column.exct h1{
+	height: 1400px;
+	font-size: 40px;
+	color: #ff6e40;
+}
+.search-button {
+	border: none;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    background-image: url(https://cdn.icon-icons.com/icons2/1489/PNG/512/magnifyingglass_102622.png);
+    background-size: cover;
+}
+
+.column.center.one{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 40px;
+	background-color: #1e3d59;
+}
+
+.card{
+  background-color: #f5f0e1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  width:60%;
+  height: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.card img{
+	object-fit: cover;
+	display: block;
+	width: 80%;
+	height: 80%;
+	border: 2px solid #ff6e40;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+h2{
+	text-align: center;
+	font-size: 15px;
+	border-top: 2px solid #ddd;
+}
+
+
+.column.center.two{
+	background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6)), url(https://t4.ftcdn.net/jpg/06/52/98/55/360_F_652985594_YepzMFVlPCVCWSyWg58qQA9HbrMuRkDl.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+a{
+    cursor: pointer;
+}
+
+.btn{
+    background-color: #f5f0e1;
+    color: #ff6e40;
+    display: inline-block;
+    padding: 15px 47px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.containerfinal{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6)), url(https://images.prismic.io/ekwateur-edito/df9ce60e-8784-4e94-aa0f-26c0323f1fe4_quelle-chaleur-degage-feu.png?auto=compress,format);
+	height: 100px;
+	color: whitesmoke;
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
